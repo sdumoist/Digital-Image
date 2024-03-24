@@ -1,0 +1,1 @@
+changesize('lab2.png',1.44,0.6);

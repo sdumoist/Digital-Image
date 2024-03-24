@@ -1,0 +1,1 @@
+changeshape('lab2.png');

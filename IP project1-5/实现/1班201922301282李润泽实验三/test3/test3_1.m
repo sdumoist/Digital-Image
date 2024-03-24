@@ -1,0 +1,1 @@
+gaussian('test2.png',3);

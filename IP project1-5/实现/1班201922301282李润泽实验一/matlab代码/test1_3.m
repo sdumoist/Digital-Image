@@ -1,0 +1,16 @@
+img = imread('a.png');
+R1 = img(:,:,1);
+G1 = img(:,:,2);
+B1 = img(:,:,3);
+R=im2double(R1);
+G=im2double(G1);
+B=im2double(B1);
+[X,map,alpha] = imread('a.png');
+back = imread('bg.png');
+bg=im2double(back);
+a = im2double(alpha);
+img2(:,:,1) = R .* a + (1-a) .* double(bg(:,:,1));
+img2(:,:,2) = G .* a + (1-a) .* double(bg(:,:,2));
+img2(:,:,3) = B .* a + (1-a) .* double(bg(:,:,3));
+imshow(img2);
+imwrite(img2,'b.png');
